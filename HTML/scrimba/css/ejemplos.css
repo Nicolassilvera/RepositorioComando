@@ -1,0 +1,8 @@
+body {
+    background: red;      /* red, blue, yellow, etc */
+    color: greenyellow;   /* red, blue, yellow, etc - color de la fuente dentro de la etiqueta*/ 
+    font-size: 30px;        /* 0px - 100px and beyond - tamaño de la fuente */
+    font-weight: bold;      /* lighter, normal, bold - letra tranqui o negrita */
+    text-align: right;      /* left, center or right  */ 
+    margin-top: 5px;        /* From 0px and upwards - marghin top es el margen de justamente arrancando desde arriba justamente */
+}

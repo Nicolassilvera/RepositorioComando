@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Input de texto:
+        Este tipo de entrada permite al usuario ingresar texto. Aquí tienes un ejemplo:
+        html 
+    </h2>
+     
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" />
+
+    <p style="color:darkred">-----------------------------------------------------------------------------------</p>
+    
+    <h1> Elija el color que mas le guste</h1>
+    <input type="color">
+
+    <P> Ademas no es el unico tipo de input que existe ... tenemos para elegir un archivo </P>
+    <input type="file " accept="img/png, img/jpeg"/>
+
+    
+
+    
+    <p>-----------------------------------------------------------------------------------</p>
+
+    Input de contraseña:
+    Este tipo de entrada oculta el texto que el usuario ingresa, útil para contraseñas.
+    html
+     
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" />
+    <p>-----------------------------------------------------------------------------------</p>
+
+    Input de correo electrónico:
+    Este tipo de entrada valida que el usuario ingrese una dirección de correo electrónico válida.
+    html
+     
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" />
+    <button> submit </button>
+    <p>-----------------------------------------------------------------------------------</p>
+
+    Input numérico:
+    Este tipo de entrada permite al usuario ingresar solo números.
+    html
+     
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="18" max="100" />
+    <p>-----------------------------------------------------------------------------------</p>
+
+    Input de selección de fecha:
+    Este tipo de entrada muestra un calendario para seleccionar una fecha.
+    html
+     
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha" />
+    <p>-----------------------------------------------------------------------------------</p>
+
+    Input de casilla de verificación (checkbox):
+    Este tipo de entrada permite al usuario seleccionar una o varias opciones.
+    html
+     
+    <label>Preferencias:</label><br />
+    <input type="checkbox" id="opcion1" name="opcion1" value="opcion1" />
+    <label for="opcion1">Opción 1</label><br />
+    <input type="checkbox" id="opcion2" name="opcion2" value="opcion2" />
+    <label for="opcion2">Opción 2</label><br />
+    <p>-----------------------------------------------------------------------------------</p>
+    Input de botón de radio:
+    Este tipo de entrada permite al usuario seleccionar una única opción entre varias.
+    html
+     
+    <label>Sexo:</label><br />
+    <input type="radio" id="masculino" name="sexo" value="masculino" />
+    <label for="masculino">Masculino</label><br />
+    <input type="radio" id="femenino" name="sexo" value="femenino" />
+    <label for="femenino">Femenino</label><br />
+    -----------------------------------------------------------------------------------
+    Input de envío (submit):
+    Este tipo de entrada muestra un botón que envía el formulario.
+    html
+     
+    <input type="submit" value="Enviar" />
+
+
+</body>
+</html>
