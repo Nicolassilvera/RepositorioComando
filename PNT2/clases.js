@@ -1,4 +1,4 @@
-// Crear una clase comprobante de factura, con id, fecha, importe, lista de items
+        // Crear una clase comprobante de factura, con id, fecha, importe, lista de items
         //(cantidad, descripcion, precio unitario) y una función para calcular el total de la
         //factura. Imprimir el resultado en la consola del navegador.
          

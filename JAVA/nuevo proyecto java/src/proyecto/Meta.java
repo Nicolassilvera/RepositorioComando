@@ -10,32 +10,33 @@ public class Meta extends Crud implements Mostrar {
         this.prioridad = prioridad;
     }
 
+    public String getDescripcion(){
+        return "   -" + this. descripcion;
+    }
+
+    public int getPrioridad(){
+        return this.prioridad;
+    }
+
     //----------------------------------------------------------------------------------------------------------------------------------------------									
 
     @Override
     public void mostrar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'mostrar'");
+        System.out.println(getDescripcion() + "|" + getPrioridad() + "|"  );
     }
     
     //----------------------------------------------------------------------------------------------------------------------------------------------
 
     @Override
     public void agregar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'agregar'");
     }
 
     @Override
     public void eliminar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminar'");
     }
 
     @Override
     public void modificar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'modificar'");
     }
     
     //----------------------------------------------------------------------------------------------------------------------------------------------

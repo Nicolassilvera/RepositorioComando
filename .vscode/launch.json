@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "Ejercicio4",
+            "projectName": "Workspace_61b7e37b"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "ar.edu.ort.tp1.Compania_Transporte.Ejercicio4",
+            "projectName": "TProg1-TP6 (2)"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "clases.Ejercicio4",
+            "projectName": "Workspace_61b7e37b"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "ar.edu.ort.tp1.tp6Ej4.Ejercicio4",
+            "projectName": "TProg1-TP6 (2)"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "ar.edu.ort.tp1.tp6Ej4.Ejercicio4",
+            "projectName": "TProg1-TP6"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio2",
+            "request": "launch",
+            "mainClass": "ar.edu.ort.tp1.tp6Ej2.Ejercicio2",
+            "projectName": "TProg1-TP6"
+        },
+        {
+            "type": "java",
+            "name": "test2",
+            "request": "launch",
+            "mainClass": "tp5EJ2.test2",
+            "projectName": "tp5EJ4"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tp5EJ4.Main",
+            "projectName": "tp5EJ4"
+        },
+        {
+            "type": "java",
+            "name": "Anio",
+            "request": "launch",
+            "mainClass": "tp5E1.Anio",
+            "projectName": "tp5EJ4"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "parcial_Correcto.src.test.Test",
+            "projectName": "Workspace_61b7e37b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "ar.edu.ort.p1.unidades.u1.ejemplos._01_enum._01_ejemplo_nivel_estudio.src.Main",
+            "projectName": "ort-p1"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

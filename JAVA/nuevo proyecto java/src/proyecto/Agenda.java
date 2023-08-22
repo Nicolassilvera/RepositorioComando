@@ -1,11 +1,37 @@
 package proyecto;
 import java.util.ArrayList;
 
-public class Agenda {
+public class Agenda implements Mostrar{
     
-    private ArrayList<Objetivo> objetivos;
+    private String nombre;
+    private ArrayList<Rol> roles;
 
-    public Agenda(){
-        this.objetivos = new ArrayList<Objetivo>();
+
+    public Agenda(String nombre){
+        this.nombre = nombre;
+        this.roles = new ArrayList<Rol>();
     }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------------									
+
+    @Override
+    public void mostrar() {
+        System.out.println(" Agenda " +  getNombre());
+        mostrarAgenda();
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------------									
+
+    private String getNombre() {
+        return this.nombre;
+    }
+
+    private void mostrarAgenda(){
+        for (Rol rol : roles) {
+            rol.mostrar();
+        }
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------------
+
 }

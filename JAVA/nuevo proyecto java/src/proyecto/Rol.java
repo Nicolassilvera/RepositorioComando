@@ -14,16 +14,28 @@ public class Rol extends Crud implements Mostrar {
         this.id = id;
     }
 
+    //----------------------------------------------------------------------------------------------------------------------------------------------
+
+    private String getNombre() {
+        return this.nombre;
+    }
+
+    private void mostrarMetas() {
+        for (Meta meta : metas) {
+            meta.mostrar();
+        }
+    }
+
     //----------------------------------------------------------------------------------------------------------------------------------------------									
 
     @Override
     public void mostrar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'mostrar'");
+        System.out.println("|:::::::::::::::::::::|");
+        System.out.println(  "  " + getNombre() + "  ");
+        System.out.println("|:::::::::::::::::::::|");
+        mostrarMetas();
     }
 
-    //----------------------------------------------------------------------------------------------------------------------------------------------
-    
     @Override
     public void agregar() {
         // TODO Auto-generated method stub

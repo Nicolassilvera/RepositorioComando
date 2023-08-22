@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "Portfolio/Java/TP6/src/tp1/Compania_Transporte/clases",
+        "JAVA",
+        "Portfolio/Java"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
