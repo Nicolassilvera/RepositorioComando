@@ -2,7 +2,7 @@ package proyecto;
 
 import java.util.ArrayList;
 
-public class Rol extends Crud implements Mostrar {
+public class Rol implements Mostrar {
 
     private String nombre;
     private ArrayList<Meta> metas;
@@ -36,22 +36,12 @@ public class Rol extends Crud implements Mostrar {
         mostrarMetas();
     }
 
-    @Override
-    public void agregar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'agregar'");
+    public void agregarMetas(Meta metas){
+        this.metas.add(metas);
     }
 
-    @Override
-    public void eliminar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminar'");
-    }
-
-    @Override
-    public void modificar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'modificar'");
+    public void eliminarMetas(Meta meta){
+        this.metas.remove(meta);
     }
 
     //----------------------------------------------------------------------------------------------------------------------------------------------

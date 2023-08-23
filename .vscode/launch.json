@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "index",
+            "request": "launch",
+            "mainClass": "proyecto.main.index",
+            "projectName": "tp5EJ4 (3)"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio4",
             "request": "launch",
             "mainClass": "Ejercicio4",

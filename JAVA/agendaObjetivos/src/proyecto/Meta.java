@@ -1,6 +1,6 @@
 package proyecto;
 
-public class Meta extends Crud implements Mostrar {
+public class Meta implements Mostrar {
 
     private int prioridad;
     private String descripcion;
@@ -9,6 +9,8 @@ public class Meta extends Crud implements Mostrar {
         this.descripcion = descripcion;
         this.prioridad = prioridad;
     }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------------									
 
     public String getDescripcion(){
         return "   -" + this. descripcion;
@@ -22,23 +24,9 @@ public class Meta extends Crud implements Mostrar {
 
     @Override
     public void mostrar() {
-        System.out.println(getDescripcion() + "|" + getPrioridad() + "|"  );
-    }
-    
-    //----------------------------------------------------------------------------------------------------------------------------------------------
-
-    @Override
-    public void agregar() {
+        System.out.println( getDescripcion() + " | " + getPrioridad() + "|"  );
     }
 
-    @Override
-    public void eliminar() {
-    }
-
-    @Override
-    public void modificar() {
-    }
-    
     //----------------------------------------------------------------------------------------------------------------------------------------------
 
 }
