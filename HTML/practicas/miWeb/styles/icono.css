@@ -1,13 +1,11 @@
-body{
-  background: linear-gradient(180deg, rgb(65, 122, 255), rgb(23, 65, 193));
-  background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
 
-}
 .icono {
+    margin: 15px;
     height: 250px;
-    width: 250%;
+    width: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 15px;
   }
   
   .icono:hover .img1 {
@@ -71,6 +69,7 @@ body{
   .icono__content .name {
     font-weight: bold;
     font-size: 1.7rem;
+    color:#B2B2B2;
   }
   
   .icono__content .job {
