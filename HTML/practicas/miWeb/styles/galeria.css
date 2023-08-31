@@ -1,0 +1,67 @@
+h1 {
+    font-family:Helvetica;
+    color: white;
+    justify-content: center;
+    align-items: center;
+} 
+
+body {
+    margin: 10px;
+    padding: 30px 40px 40px 40px;
+    background-image: url(../img/dark.jpg);
+}
+
+.nav {
+  display: inline;
+}
+
+.palette {
+    right: 20%;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+   /* recomiendo quitar esto/quit this */
+  }
+  
+  .color {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+  
+  .color span {
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
+  
+  .color:nth-child(1) {
+    background-image: url(../img/bosque.jpg  );
+  }
+  
+  .color:nth-child(2) {
+    background-image: url(../img/city.png);
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+  }
+  
+  .color:nth-child(3) {
+    background: transparent;
+  }
+
+  .color:hover {
+    flex: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .color:hover span {
+    opacity: 1;
+  }
+
