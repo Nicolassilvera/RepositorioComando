@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+        <p v-if="ver" style="color:green"> texto true</p>
+        <p v-else="ver" style="color:red;"> texto false</p>
+
+        <h1> Lista de cosas </h1>
+        <li v-for="cosas in lista">
+            {{cosas.nombre}}{{cosas.marca}}
+        </li>
+        
+        <h1 :style="{color:color}">Hola esto es un msj a color</h1>
+        {{ mensae }}
+        
+        <br>
+        
+        id: <input v-model="vehiculo.id">
+        patente: <input v-model="vehiculo.nombre">
+        marca: <input v-model="vehiculo.marca">
+        <button v-on:click="agregar">Agregar</button>
+        
+    </div>
+    <script>
+         const {createApp} = Vue
+         createApp({
+            data(){
+                return{
+                    mensaje: "Hola Vue!",
+                    color: "red",
+                    ver: true,
+                    lista:[{id:1, nombre:"Atun", marca:" la campagnola" },
+                           {id:2, nombre:"Casco", marca:"LS2" },
+                           {id:3, nombre:"Dominar 250", marca:"Bajaj"},
+                           {id:2, nombre:"Ninja 600", marca:"kawasaki"}],
+                    vehiculo:{
+                        id:4,
+                        nombre:"mt-09",
+                        marca:"Yamahaa"
+                    }
+
+                }
+            },
+            methods:{
+                saludar(){
+                    this.mensaje = "Saludo por metodo ...";
+                },
+                agregar(){
+
+                    // this.lista.push(this.vehiculo); asi se agrega continuamente el mismo y cuando lo cambias cambiando todo...
+                    this.lista.push({...this.vehiculo});
+                }
+            }
+         }).mount('#app');
+    </script>
+</body>
+</html>

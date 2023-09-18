@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const resultados = {
+            
+            total: 0,
+            cantpositivos: 0,
+            cantNegativos: 0,
+            mayorOcho: 0 
+        }
+        
+        const numeros = [3,6,-4,8,10,-15,30,0,-12,20]; 
+        
+        for(var i = 0; i < numeros.length; i++ ){
+            resultados.total++;
+            if(numeros[i] > 0){
+                resultados.cantpositivos++;
+                if(numeros[i] >= 8){
+                    resultados.mayorOcho++;
+                }
+            } else {
+                resultados.total++;
+                resultados.cantNegativos++;
+            }
+
+        }
+        console.log(resultados);
+    </script>
+    
+</body>
+</html>
