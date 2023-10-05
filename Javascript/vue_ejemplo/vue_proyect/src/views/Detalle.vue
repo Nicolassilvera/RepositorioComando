@@ -2,12 +2,12 @@
     <div>
         <h2> Detalle clientes </h2>
         {{clientes}}
-        <Cliente @agregar="agregarAlaLista"/> <!-- recibe la llamda de Cliente y lo usa internamente-->
+        <Cliente @agregar="agregarAlaLista"/> <!-- recibe la llamda de Cliente y lo usa internamente @nombreDeLLamda="metodo que se va usar en el llamado"  -->
     </div>
 </template>
 
 <script>
-    import Cliente from './Cliente.vue'
+    import Cliente from '../Cliente.vue'
     export default {    
         components:{
             Cliente

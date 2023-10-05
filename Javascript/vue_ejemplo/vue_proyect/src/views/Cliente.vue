@@ -21,7 +21,7 @@ export default {
     },  
     methods:{
         agregarCliente(){
-            this.$emit('agregar', this.cliente); // Emite una llamada al metodo de detalle 
+            this.$emit('agregar', this.cliente); // Emite una llamada al metodo de detalle --> ('nombrellamada', datoAEnviar)
         }
     }
 }

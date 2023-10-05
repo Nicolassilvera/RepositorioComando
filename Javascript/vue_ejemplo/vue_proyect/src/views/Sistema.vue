@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Detalle from './detalle.vue'
+import Detalle from '../detalle.vue'
 export default {
     components:{
         Detalle
