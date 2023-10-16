@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import SystemView from '../views/systemView.vue'
+import SystemView from '../views/SystemView.vue'
+import ShoppingCart from '../views/ShoppingCart.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,14 +12,22 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      component: AboutView
-    },
-    {
       path: '/system',
       name: 'systemview',
-      componenet: SystemView
+      component: SystemView
+    },
+    {
+      path: '/shopping',
+      name: 'shopping',
+      component: ShoppingCart
+    },
+    {
+      path: '/about',
+      name: 'about',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AboutView.vue')
     }
   ]
 })

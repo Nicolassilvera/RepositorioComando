@@ -3,7 +3,6 @@ import {IonPage} from '@ionic/vue'
 export default {
   components: {IonPage}
 }
-
 </script>
 
 <template>
@@ -11,3 +10,6 @@ export default {
     <h2>Home</h2>
   </ion-page>
 </template>
+
+<style>
+</style>

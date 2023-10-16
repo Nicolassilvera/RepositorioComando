@@ -1,44 +1,35 @@
-<template>
-    <ion-page>
-      <ion-content>
-        <h2>System Page</h2>
-        <ion-list v-for="e in lista" :key="e.id">
-          {{ e.id }} {{ e.nombre }}
-        </ion-list>  
-        <ion-input v-model="elemento.id" label="Codigo"></ion-input>
-        <ion-input v-model="elemento.nombre" label="Nombre"></ion-input>
-        <ion-button @click="agregaraLista">Agregar</ion-button>
-        <ion-button @click="ordenarLista">Ordenar</ion-button>
-        <ion-button @click="iraHome">Ir a home</ion-button>
-      </ion-content>
-    </ion-page>
-  </template>
-  
-  <script>
-  import {IonPage, IonButton, IonContent, IonInput, IonList} from '@ionic/vue'
-  export default {
-    components: {IonPage, IonButton, IonContent, IonInput, IonList},
-    methods: {
-      iraHome() {
-        this.$router.push("/")
-      },
-      agregaraLista() {
-        this.lista.push({...this.elemento})
-        this.elemento = {}
-      },
-      ordenarLista() {
-        this.lista.sort( (a,b) => a.id - b.id  )
-      }
-    },
-    data() {
-      return {
-        lista: [{id:101,nombre:'Carlos'},{id:100,nombre:'Roxana'},],
-        elemento: {}
-      }
+<script>
+import {IonPage,IonContent,IonList,IonInput,IonButton} from '@ionic/vue'
+export default {
+  components: {IonPage, IonContent, IonList, IonInput, IonButton},
+  data() {
+    return {
+        lista: [{id:100,name:'Charly'},{id:200,name:'Jhon'}],
+        person: {}
+    }
+  },
+  methods: {
+    addName() {
+        this.lista.push({...this.person})
+        this.person = {}
     }
   }
-  </script>
-  
-  <style>
-  
-  </style>
+}
+</script>
+
+<template>
+  <ion-page>
+    <ion-content>
+        <h2>System</h2>
+        <ion-list v-for="e in lista" :key="e.id">
+            {{ e.id }} {{ e.name }}
+        </ion-list>
+        <ion-input v-model="person.id" label="id" placeholder="input an id"></ion-input>
+        <ion-input v-model="person.name" label="Name" placeholder="input a name"></ion-input>
+        <ion-button @click="addName">Add Name to list</ion-button>
+    </ion-content>
+  </ion-page>
+</template>
+
+<style>
+</style>

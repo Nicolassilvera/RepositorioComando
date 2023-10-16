@@ -1,41 +1,34 @@
 import express from 'express'
-// console.log(express)
 const app = express()
 
-const supermans =[{
-    id:1,
-    nombre: "Nico",
-},]
+app.use(express.json()); 
 
-app.get("/superman", (req, res)=>{
-    res.send(superman);
+app.listen(5052, ()=>{
+    console.log("Serven on port 5052");
 })
 
-app.get("/superman/:id", (req, res)=>{
-    console.log("Require",req.params.id)
-    const {id} = req.params;
-    const superMan = supermans.find((superman) =>{
-        superman.id === parseInt(id);
+//---------------------------------------------------------------
+
+app.get("/user", (req, res)=>{
+    res.json({
+        nombre:"Nicolas",
+        apellido:"Silvera"
     });
-    if(!superMan){
-        res.status(404).send("No hay superman");
-    }
-    res.status(200).send(superman)
-    res.send("get Superman por id");
 });
 
-app.post("/superman/:id", (req, res)=>{
-    res.send("Superman");
-})
+app.post("/user", (req, res)=>{
+    console.log(req.body);
+    res.send("Post request received");
+});
 
-app.put("/superman/:id", (req, res)=>{
-    res.send("Superman");
-})
+app.put("/user/:idUser", (req, res)=>{
+    console.log(req.body);
+    res.send(`Usuario ${req.params.idUser} actualizado`);
+});
 
-app.delete("/superman/:id", (req, res)=>{
-    res.send("delete Superman");
-})
+app.delete("/user/:idUser",(req, res)=>{
+    res.send(`Usuario ${req.params.idUser} deleted`);
+});
 
-app.listen(8080, ()=>{
-    console.log("http://localhost:8080:")
-})
+
+ 
